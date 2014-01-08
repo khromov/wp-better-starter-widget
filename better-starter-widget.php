@@ -39,7 +39,7 @@ class Widget_Better_Starter_Widget extends WP_Widget
 
 		//Add fields
 		$this->add_field('title', 'Enter title', '', 'text');
-		$this->add_field('example_field', 'Example field', 'This is the default value', 'fgasd');
+		$this->add_field('example_field', 'Example field', 'This is the default value', 'text');
 
 		//Translations
 		load_plugin_textdomain($this->textdomain, false, basename(dirname(__FILE__)) . '/languages' );
