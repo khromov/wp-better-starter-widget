@@ -70,7 +70,11 @@ class Widget_Better_Starter_Widget extends WP_Widget
 		/* After widget */
 		echo $args['after_widget'];
 	}
-
+	
+	/**
+	 * This function will execute the widget frontend logic.
+	 * Everything you want in the widget should be output here.
+	 */
 	private function widget_output($args, $instance)
 	{
 		extract($instance);
@@ -119,6 +123,7 @@ class Widget_Better_Starter_Widget extends WP_Widget
 	 * @param $field_name
 	 * @param string $field_description
 	 * @param string $field_default_value
+	 * @param string $field_type
 	 */
 	private function add_field($field_name, $field_description = '', $field_default_value = '', $field_type = 'text')
 	{
@@ -129,7 +134,7 @@ class Widget_Better_Starter_Widget extends WP_Widget
 	}
 
 	/**
-	 * Updating widget replacing old instances with new
+	 * Updating widget by replacing the old instance with new
 	 *
 	 * @param array $new_instance
 	 * @param array $old_instance
