@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Better Starter Widget for WordPress developers
-Plugin URI: http://itbranschen.idg.se
+Plugin URI: 
 Description: Effortlessly create WordPress widgets with this template!
 Version: 1.0
 Author: khromov
@@ -15,7 +15,7 @@ License: GPL2
 add_action('widgets_init', create_function('', 'return register_widget("Widget_Better_Starter_Widget");'));
 
 /**
- * Class ITBranschen_Profile_Update_Widget
+ * Class Widget_Better_Starter_Widget
  */
 class Widget_Better_Starter_Widget extends WP_Widget
 {
